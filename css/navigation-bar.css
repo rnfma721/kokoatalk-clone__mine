@@ -1,0 +1,472 @@
+.navigation-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #e8e8e8;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.navigation-bar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navigation-bar li a {
+  color: #222831;
+}
+
+.snow-floor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #e8e8e8;
+  position: fixed;
+  z-index: -1;
+  animation: snow-floor-1 30s infinite;
+}
+@keyframes snow-floor-1 {
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+  }
+  33% {
+    opacity: 0.9;
+    filter: blur(0px);
+  }
+  92% {
+    opacity: 0.6;
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(0px);
+  }
+}
+
+.snow-floor__number1 {
+  bottom: 30px;
+  left: -20px;
+}
+.snow-floor__number2 {
+  bottom: 30px;
+  left: 20px;
+}
+.snow-floor__number3 {
+  bottom: 30px;
+  left: 40px;
+}
+.snow-floor__number4 {
+  bottom: 30px;
+  left: 70px;
+}
+.snow-floor__number5 {
+  bottom: 30px;
+  left: 120px;
+}
+.snow-floor__number6 {
+  bottom: 30px;
+}
+.snow-floor__number7 {
+  bottom: 30px;
+  left: 140px;
+}
+.snow-floor__number8 {
+  bottom: 30px;
+  left: 170px;
+}
+.snow-floor__number9 {
+  bottom: 30px;
+  left: 200px;
+}
+.snow-floor__number10 {
+  bottom: 30px;
+  left: 210px;
+}
+.snow-floor__number11 {
+  bottom: 30px;
+  left: 240px;
+}
+.snow-floor__number12 {
+  bottom: 30px;
+  left: 400px;
+}
+.snow-floor__number13 {
+  bottom: 30px;
+  left: 288px;
+}
+.snow-floor__number14 {
+  bottom: 30px;
+  left: 340px;
+}
+.snow-floor__number15 {
+  bottom: 30px;
+  left: 376px;
+}
+.snow-floor__number16 {
+  bottom: 30px;
+  left: 423px;
+}
+.snow-floor__number17 {
+  bottom: 30px;
+  left: 450px;
+}
+
+.snow-floor2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #e8e8e8;
+  position: fixed;
+  z-index: -1;
+  animation: snowing-floor2 30s infinite;
+}
+
+@keyframes snowing-floor2 {
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+  }
+  25% {
+    opacity: 0;
+    filter: blur(5px);
+  }
+  70% {
+    opacity: 0.9;
+    filter: blur(0px);
+  }
+  85% {
+    opacity: 0.4;
+    filter: blur(2px);
+  }
+  93% {
+    opacity: 0.1;
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(4px);
+  }
+}
+
+.snow-floor2__number1 {
+  bottom: 50px;
+  left: -20px;
+}
+.snow-floor2__number2 {
+  bottom: 45px;
+  left: 20px;
+}
+.snow-floor2__number3 {
+  bottom: 40px;
+  left: 40px;
+}
+.snow-floor2__number4 {
+  bottom: 35px;
+  left: 70px;
+}
+.snow-floor2__number5 {
+  bottom: 45px;
+  left: 120px;
+}
+.snow-floor2__number6 {
+  bottom: 42px;
+}
+.snow-floor2__number7 {
+  bottom: 48px;
+  left: 140px;
+}
+.snow-floor2__number8 {
+  bottom: 38px;
+  left: 170px;
+}
+.snow-floor2__number9 {
+  bottom: 36px;
+  left: 200px;
+}
+.snow-floor2__number10 {
+  bottom: 41px;
+  left: 210px;
+}
+.snow-floor2__number11 {
+  bottom: 49px;
+  left: 240px;
+}
+.snow-floor2__number12 {
+  bottom: 37px;
+  left: 400px;
+}
+.snow-floo2r__number13 {
+  bottom: 43px;
+  left: 288px;
+}
+.snow-floor2__number14 {
+  bottom: 47px;
+  left: 340px;
+}
+.snow-floor2__number15 {
+  bottom: 42px;
+  left: 376px;
+}
+.snow-floor2__number16 {
+  bottom: 34px;
+  left: 423px;
+}
+.snow-floor2__number17 {
+  bottom: 41px;
+  left: 450px;
+}
+.snow-floor2__number18 {
+  bottom: 48px;
+  right: -25px;
+}
+.snow-floor2__number19 {
+  bottom: 42px;
+  right: 146px;
+}
+
+.sleigh {
+  position: fixed;
+  bottom: 70px;
+  left: -60px;
+  color: #f05454;
+  z-index: -2;
+  animation: sleigh-moving1 30s infinite;
+}
+@keyframes sleigh-moving1 {
+  22% {
+    transform: translateX(0);
+  }
+  55% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(600px);
+  }
+  10%,
+  18%,
+  32%,
+  39%,
+  53%,
+  60%,
+  70%,
+  80%,
+  90% {
+    margin-bottom: 0px;
+  }
+  5%,
+  17%,
+  24%,
+  38%,
+  44%,
+  55%,
+  67%,
+  74%,
+  86%,
+  99% {
+    margin-bottom: 5px;
+  }
+}
+
+.sleigh2 {
+  position: fixed;
+  bottom: 70px;
+  left: -60px;
+  color: #222831;
+  z-index: -2;
+  animation: sleigh-moving2 30s infinite;
+  animation-delay: 5s;
+}
+
+@keyframes sleigh-moving2 {
+  22% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(600px);
+  }
+  10%,
+  18%,
+  32%,
+  39%,
+  53%,
+  60%,
+  70%,
+  80%,
+  90% {
+    margin-bottom: 0px;
+  }
+  5%,
+  17%,
+  24%,
+  38%,
+  44%,
+  55%,
+  67%,
+  74%,
+  86%,
+  99% {
+    margin-bottom: 5px;
+  }
+}
+
+.tree {
+  display: block;
+  position: fixed;
+  bottom: 70px;
+  z-index: -3;
+}
+@keyframes tree-shaking1 {
+  35% {
+    transform: rotateZ(3deg);
+  }
+  75% {
+    transform: rotateZ(-4deg);
+  }
+}
+
+@keyframes tree-shaking2 {
+  33% {
+    transform: rotateZ(-2deg);
+  }
+  66% {
+    transform: rotateZ(5deg);
+  }
+}
+
+.tree i {
+  margin-right: 45px;
+  color: var(--green);
+}
+
+.tree i:nth-child(2n-1) {
+  animation: tree-shaking1 2s ease infinite;
+  color: #34626c;
+}
+
+.tree i:last-child {
+  margin-left: 10px;
+  color: #556052;
+}
+
+.tree i:nth-child(2n) {
+  animation: tree-shaking2 1.5s ease-in infinite;
+}
+
+.icon-hover i {
+  opacity: 1;
+  color: #222831;
+  animation: shaking-navs 1s infinite;
+}
+
+@keyframes shaking-navs {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotateZ(4deg);
+  }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: rotateZ(-4deg);
+  }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  from {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+  }
+  to {
+    height: 50px;
+    width: 50px;
+    opacity: 1;
+  }
+}
+
+.socks {
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 15px;
+}
+.socks1 {
+  left: 30px;
+}
+.socks2 {
+  left: -10px;
+  bottom: -5px;
+}
+.socks3 {
+  right: 160px;
+}
+.socks4 {
+  right: 30px;
+}
+
+.icon-hover:hover i {
+  animation: disappear 0.1s forwards;
+}
+
+.icon-hover:hover img {
+  animation: appear 0.4s forwards, shaking-socks 2s infinite;
+}
+.socks:hover {
+  animation: appear 0.4s forwards, shaking-socks 2s infinite;
+}
+@keyframes shaking-socks {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotateZ(10deg);
+  }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: rotateZ(-10deg);
+  }
+}
+.icon-hover__chats {
+  position: relative;
+}
+.navigation-bar__notice-ball {
+  bottom: 20px;
+  left: 20px;
+  position: absolute;
+  animation: notice-ball__spin 2s infinite;
+}
+.icon-hover:hover span[id="notice-ball"] {
+  animation: disappear 0.1s forwards;
+}
+@keyframes notice-ball__spin {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}

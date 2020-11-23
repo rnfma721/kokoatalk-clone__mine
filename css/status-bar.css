@@ -1,0 +1,72 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(34, 40, 49, 0.5);
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  z-index: 1;
+}
+
+.status-bar span {
+  color: #e8e8e8;
+}
+
+.status-bar__left {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.status-bar__left span:first-child {
+  margin-right: 10px;
+  font-weight: 600;
+}
+.status-bar__left span {
+  font-size: 20px;
+}
+.status-bar__middle {
+  width: 50%;
+}
+.status-bar__middle span:first-child {
+  margin-right: 5px;
+}
+.status-bar__right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status-bar__right span {
+  margin-left: 10px;
+}
+
+.status-bar__right span:last-child {
+  position: relative;
+}
+
+.status-bar__right span:last-child div {
+  background-color: #e8e8e8;
+  width: 22px;
+  height: 8px;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  animation: battery 3s ease-in infinite;
+}
+@keyframes battery {
+  0% {
+    width: 2px;
+  }
+  30% {
+    background-color: #f05454;
+  }
+  50% {
+    background-color: #e8e8e8;
+  }
+  100% {
+    width: 22px;
+  }
+}

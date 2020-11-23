@@ -1,0 +1,12 @@
+.santatalk-column__right {
+    position: relative;
+}
+
+.notice-ball--column {
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+  }
+.chats-nico {
+    text-decoration: none;
+}

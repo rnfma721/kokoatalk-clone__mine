@@ -1,0 +1,235 @@
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-header span {
+  font-size: 70px;
+  font-weight: 700;
+  margin-top: 40px;
+  color: #e8e8e8;
+  text-shadow: 0px 5px #222831;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 70px 25px 0px 25px;
+  position: relative;
+}
+.login-form div:first-child {
+  border: 4px solid #e8e8e8;
+  border-radius: 20px;
+  border-top-right-radius: 0px;
+  margin: 20px 0px;
+}
+.login-form div:nth-child(2) {
+  border: 4px solid #e8e8e8;
+  border-radius: 20px;
+  border-top-right-radius: 0px;
+  margin: 20px 0px;
+}
+
+.login-form__box input {
+  margin: 25px 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  color: #e8e8e8;
+  padding-right: 100px;
+  font-size: 20px;
+}
+
+.login-form__box i {
+  color: #bce6eb;
+}
+
+.login-form__box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+  box-shadow: 0px 5px #222831;
+}
+.login-form__box input::placeholder {
+  color: #e8e8e8;
+}
+
+.snowflake {
+  margin-left: 20px;
+}
+
+.icicles-big {
+  display: block;
+  position: absolute;
+  top: 95px;
+  right: 30px;
+  animation: disappear-big 10s ease-in infinite;
+}
+
+.icicles-small {
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  animation: disappear-small 10s ease-in infinite;
+}
+
+@keyframes disappear-big {
+  0% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes disappear-small {
+  0% {
+    opacity: 0.6;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.login-form__box input:focus,
+:hover {
+  outline: cadetblue;
+}
+.login-form__box:focus-within {
+  animation: login-border 2s infinite;
+}
+@keyframes login-border {
+  25% {
+    border-top: 4px solid #bce6eb;
+  }
+  50% {
+    border-top: 4px solid #bce6eb;
+    border-right: 4px solid #bce6eb;
+  }
+  75% {
+    border-top: 4px solid #bce6eb;
+    border-right: 4px solid #bce6eb;
+    border-bottom: 4px solid #bce6eb;
+  }
+  100% {
+    border-top: 4px solid #bce6eb;
+    border-right: 4px solid #bce6eb;
+    border-bottom: 4px solid #bce6eb;
+    border-left: 4px solid #bce6eb;
+  }
+}
+
+.login-form div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.login-form__submit-button {
+  background-color: #222831;
+  color: #e8e8e8;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  height: 100px;
+  margin-top: 40px;
+  font-size: 40px;
+  transition: 0.8s ease;
+  opacity: 0.8;
+}
+
+.snowman-big {
+  display: block;
+  position: absolute;
+  color: #e8e8e8;
+  top: 0px;
+  right: 150px;
+}
+
+.snowman-small {
+  display: block;
+  position: absolute;
+  color: #e8e8e8;
+  top: 15px;
+  right: 100px;
+}
+.stay-signed-in {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 30px 20px 30px;
+  border-bottom: 2px solid #222831;
+  padding-bottom: 10px;
+}
+
+/* checkbox-design */
+.stay-signed-in input[id="button"] + label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid#222831;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in;
+}
+
+.stay-signed-in input {
+  display: none;
+}
+
+.stay-signed-in label:last-child {
+  font-size: 20px;
+  padding-left: 10px;
+  color: #e8e8e8;
+  opacity: 0.8;
+}
+
+.stay-signed-in input[id="button"]:checked + label {
+  background-color: #222831;
+  opacity: 0.7;
+}
+
+.login-find {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+.login-find span {
+  display: block;
+  border-right: 2px solid#222831;
+  margin-right: 20px;
+  padding-right: 15px;
+  font-size: 18px;
+}
+.login-find span:last-child {
+  border: none;
+}
+.login-find span a {
+  text-decoration: none;
+  color: #222831;
+  background-color: rgba(0, 0, 0, 0);
+  transition: color 0.5s ease-out;
+}
+.login-find span a::selection {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.login-form__submit-button:hover {
+  background-color: #f05454;
+  opacity: 0.8;
+}
+
+.login-find span a:hover {
+  color: var(--red);
+}

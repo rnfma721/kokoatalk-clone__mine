@@ -1,0 +1,109 @@
+.santatalk-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  margin: 5px 0px;
+  background-color: var(--liquid);
+  transition: background-color 0.3s ease-out;
+}
+
+.santatalk-column:hover {
+  background-color: var(--shadow);
+  cursor: pointer;
+}
+
+.santatalk-column__left--big img {
+  width: 70px;
+  height: 70px;
+  border-radius: 25px;
+  margin-right: 20px;
+  opacity: 0.9;
+}
+.santatalk-column__left--middle img {
+  width: 60px;
+  height: 60px;
+  border-radius: 22px;
+  margin-right: 20px;
+  opacity: 0.9;
+}
+.santatalk-column__left--small img {
+  width: 50px;
+  height: 50px;
+  border-radius: 18px;
+  margin-right: 20px;
+  opacity: 0.9;
+}
+.santatalk-column__left {
+  display: flex;
+  align-items: center;
+}
+
+.santatalk-column__left--textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.santatalk-column__left--title {
+  font-size: 20px;
+  color: var(--white);
+  text-shadow: 3px 3px var(--shadow);
+  margin-bottom: 10px;
+}
+.santatalk-column__left--description {
+  font-size: 15px;
+  color: var(--white);
+  text-shadow: 3px 3px var(--shadow);
+  opacity: 0.6;
+}
+.santatalk-column__right--event {
+  background-color: var(--liquid);
+  border: 3px solid var(--red);
+  border-radius: 20px;
+  padding: 5px 5px;
+  color: var(--white);
+  font-size: 13px;
+  text-shadow: 3px 3px var(--shadow);
+  transition: color 0.5s ease-out;
+}
+.santatalk-column__right--music {
+  background-color: var(--liquid);
+  border: 3px solid var(--green);
+  border-radius: 20px;
+  padding: 5px 5px;
+  color: var(--white);
+  font-size: 13px;
+  text-shadow: 3px 3px var(--shadow);
+  transition: color 0.5s ease-out;
+}
+.santatalk-column__right span {
+  color: var(--white);
+}
+.santatalk-column__right--time {
+  display: inline-block;
+  padding-bottom: 20px;
+  color: var(--white);
+  text-shadow: 3px 3px var(--shadow);
+  opacity: 0.6;
+}
+
+.anystate-friends-box {
+  margin: 10px 15px 0px 15px;
+  padding-top: 10px;
+  border-top: 2px solid var(--shadow);
+  color: var(--white);
+  opacity: 0.7;
+}
+.anystate-friends {
+  display: flex;
+  flex-direction: column;
+}
+.santatalk-column__right--event:hover {
+  cursor: pointer;
+  color: var(--red);
+}
+.santatalk-column__right--music:hover {
+  cursor: pointer;
+  color: var(--green);
+}

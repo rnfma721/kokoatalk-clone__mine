@@ -1,0 +1,36 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+/* variable */
+@import "component/variable.css";
+
+/* main */
+@import "background.css";
+@import "status-bar.css";
+@import "1.css";
+@import "index.css";
+@import "friends.css";
+@import "navigation-bar.css";
+@import "component/header.css";
+@import "component/columns.css";
+@import "component/notice-ball.css";
+@import "chats.css";
+@import "more.css";
+@import "component/red-dot.css";
+@import "component/settings-header.css";
+@import "chats-nico.css";
+@import "component/no-mobile.css";
+@import "hashtag.css";
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Sniglet", cursive;
+  height: 2000px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}

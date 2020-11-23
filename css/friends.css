@@ -1,0 +1,95 @@
+#splash-screen {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navy);
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 10;
+    animation: splash-ani 5s ease-out forwards;
+}
+@keyframes splash-ani {
+    0% {
+        z-index: 10;
+    }
+    50% {
+        z-index: 10;
+    }
+    90% {
+        opacity: 1;
+    }
+    94% {
+        z-index: 10;
+    }
+    95% {
+        z-index: -10;
+    }
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+#splash-screen img {
+    width: 300px;
+}
+.loading-screen span {
+    margin: 0px 10px;
+    color: var(--ice);
+    animation: loading-screen 5s;
+    opacity: 0;
+}
+@keyframes loading-screen {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.9;
+    }
+    30% {
+        opacity: 0.5;
+    }
+    35% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+.loading-screen span:nth-child(2) {
+    animation-delay: 0.8s;
+}
+.loading-screen span:nth-child(3) {
+    animation-delay: 1.6s;
+}
+.loading-screen span:nth-child(4) {
+    animation-delay: 2.2s;
+}
+.loading-screen span:last-child {
+    animation-delay: 2.8s;
+}
+
+.splash-screen {
+    position: relative;
+}
+.bubble-screen div span{
+    background-color: #9ddfd3;
+    padding: 40px 50px;
+    border-radius: 50%;
+    z-index: 11;
+    font-size: 30px;
+}
+.bubble-screen {
+    animation: appear-splash 5s ease-out;
+}
+@keyframes appear-splash {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}

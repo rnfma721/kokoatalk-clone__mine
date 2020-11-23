@@ -1,0 +1,42 @@
+#no-mobile {
+    position: absolute;
+    z-index: 50;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--navy);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+}
+#no-mobile img {
+    width: 400px;
+    animation: drop-santa 3s infinite;
+    transform: rotateY(-1000px);
+}
+@keyframes drop-santa {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-40px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+}
+#no-mobile span {
+    color: var(--white);
+    font-size: 2rem
+}
+
+@media screen and (max-width: 500px) {
+    #no-mobile {
+        display: none;
+    }
+}

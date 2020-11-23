@@ -1,0 +1,88 @@
+.settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top: 10px;
+    background-color: rgba(34, 40, 49, 0.3);
+    padding-bottom: 10px;
+}
+.settings-header span {
+    color: var(--white);
+    font-size: 25px;
+    text-shadow: 4px 4px var(--shadow);
+}
+.settings-column__first {
+    margin: 90px 15px 0px 15px;
+    padding: 20px 0px;
+    border-bottom: 2px solid var(--border-top);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: background-color 0.3s ease-out;
+}
+.settings-column__first:hover {
+    background-color: var(--shadow);
+    justify-content: center;
+    cursor: pointer;
+}
+.settings-column__first span{
+    font-size: 25px;
+    color: var(--white);
+    margin: 0px 5px;
+}
+.settings-column__first span:nth-child(3) {
+    font-size: 15px;
+    background-color: var(--red);
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+.settings-column {
+    padding: 20px 0px;
+    margin: 0px 15px;
+    border-bottom: 2px solid var(--border-top);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: background-color 0.3s ease-out;
+}
+.settings-column:hover {
+    background-color: var(--shadow);
+    justify-content: center;
+    cursor: pointer;
+}
+.settings-column:hover i {
+    animation: i-hover_ani 1s forwards, shaking 2s infinite;
+}
+.settings-column__first:hover i {
+    animation: i-hover_ani 1s forwards, shaking 2s infinite;
+}
+@keyframes i-hover_ani {
+    from {
+        color: var(--white);
+    }
+    to {
+        color: var(--green);
+    }
+}
+.settings-column span{
+    font-size: 25px;
+    color: var(--white);
+    margin: 0px 5px;
+}
+.settings-header div:first-child span {
+    margin: 0px 5px;
+}
+.settings-column span:nth-child(3) {
+    font-size: 15px;
+    background-color: var(--red);
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+.status-bar {
+    top:0px;
+}
